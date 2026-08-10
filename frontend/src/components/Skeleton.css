@@ -1,0 +1,54 @@
+/* Add to existing Inventory.css or create new */
+.skeleton-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  height: 400px;
+}
+
+.skeleton-img {
+  height: 240px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+.skeleton-content {
+  padding: 24px;
+}
+
+.skeleton-title {
+  height: 24px;
+  width: 70%;
+  background: #f0f0f0;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  animation: loading 1.5s infinite;
+}
+
+.skeleton-specs {
+  height: 16px;
+  width: 50%;
+  background: #f0f0f0;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  animation: loading 1.5s infinite;
+}
+
+.skeleton-price {
+  height: 30px;
+  width: 40%;
+  background: #f0f0f0;
+  border-radius: 4px;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

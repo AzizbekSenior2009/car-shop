@@ -1,0 +1,134 @@
+.header {
+  padding: 20px 0;
+  background-color: var(--card-bg);
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--primary-color);
+}
+
+.logo span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  color: #555;
+  transition: var(--transition);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-btn:hover {
+  color: var(--primary-color);
+}
+
+.nav-menu a {
+  font-size: 14px;
+  color: #555;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.nav-menu a:hover, .nav-menu a.active-link {
+  color: var(--primary-color);
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.header-actions-mobile {
+  display: none;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(2px);
+  z-index: 98;
+}
+
+@media (max-width: 768px) {
+  .mobile-toggle {
+    display: block;
+  }
+  
+  .header-actions {
+    display: none;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--card-bg);
+    padding: 80px 30px;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    border-top: none;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-menu.active {
+    right: 0;
+  }
+  
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .nav-menu a, .nav-menu .nav-btn {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .header-actions-mobile {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .mobile-toggle {
+    z-index: 100;
+    position: relative;
+  }
+}
