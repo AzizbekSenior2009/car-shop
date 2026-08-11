@@ -5,15 +5,6 @@ import { useLanguage } from '../context/LanguageContext';
 import '../components/Inventory.css';
 import '../components/Skeleton.css';
 
-const mockCars = [
-  { _id: '1', make: 'Mercedes-Benz', model: 'G63 AMG', year: 2025, mileage: '0 km', price: 'AED 799,000', image: '/images/cars/mercedes_g63_1786365903795.jpg' },
-  { _id: '2', make: 'Land Rover', model: 'Range Rover Vogue', year: 2025, mileage: '5,000 km', price: 'AED 536,000', image: '/images/cars/range_rover_1786365914499.jpg' },
-  { _id: '3', make: 'Porsche', model: '911 Turbo S', year: 2024, mileage: '12,000 km', price: 'AED 665,000', image: '/images/cars/porsche_911_1786365927172.jpg' },
-  { _id: '4', make: 'Lamborghini', model: 'Urus', year: 2024, mileage: '1,500 km', price: 'AED 1,450,000', image: '/images/cars/lambo_urus_1786365940452.jpg' },
-  { _id: '5', make: 'Rolls-Royce', model: 'Cullinan', year: 2025, mileage: '0 km', price: 'AED 1,900,000', image: '/images/cars/rolls_royce_1786365955282.jpg' },
-  { _id: '6', make: 'Ferrari', model: 'SF90 Stradale', year: 2023, mileage: '4,200 km', price: 'AED 2,150,000', image: '/images/cars/ferrari_sf90_1786365973233.jpg' }
-];
-
 const SkeletonCard = () => (
   <div className="skeleton-card">
     <div className="skeleton-img"></div>
@@ -26,20 +17,20 @@ const SkeletonCard = () => (
 );
 
 const InventoryPage = () => {
-  const [cars, setCars] = useState(mockCars);
-  const [loading, setLoading] = useState(false);
+  const [cars, setCars] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const { t } = useLanguage();
 
   useEffect(() => {
     const fetchCars = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/cars', { timeout: 1000 });
-        if (response.data && response.data.length > 0) {
-          setCars(response.data);
-        }
+        const response = await axios.get('http://localhost:5000/api/cars');
+        setCars(response.data);
       } catch (error) {
-        // Keep mockCars
+        console.error("Error fetching cars:", error);
+      } finally {
+        setLoading(false);
       }
     };
 

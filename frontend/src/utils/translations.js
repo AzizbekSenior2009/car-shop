@@ -115,6 +115,21 @@ export const translations = {
       subtitle: 'Leave your details and we will get back to you.',
       btnSending: 'Sending...',
       btnSubmit: 'Submit Request'
+    },
+    about: {
+      title: 'About Mayfair Automotive Haus',
+      subtitle: 'The Largest Premium Car Dealership in Dubai',
+      desc1: "Welcome to Mayfair Automotive Haus, the premier destination for luxury, performance, and exotic vehicles in Dubai. We pride ourselves on offering an unmatched selection of the world's most sought-after automobiles.",
+      desc2: "Our commitment to excellence extends beyond the showroom. We provide bespoke sourcing, tailored financial solutions, and discreet, world-class service to clients across the globe.",
+      statsTitle: 'Our Global Reach',
+      stat1: '15,000+',
+      stat1Desc: 'Premium Vehicles Sold',
+      stat2: '50+',
+      stat2Desc: 'Countries Exported To',
+      stat3: '100%',
+      stat3Desc: 'Customer Satisfaction',
+      videoTitle: 'Discover Automotive Perfection',
+      videoDesc: 'Experience the pinnacle of engineering and design. Our vehicles come equipped with state-of-the-art features, unparalleled performance capabilities, and the ultimate in luxury refinement. Watch the showcase to see the incredible features in action.'
     }
   },
   uz: {
@@ -233,6 +248,21 @@ export const translations = {
       subtitle: 'Ma\'lumotlaringizni qoldiring, biz sizga aloqaga chiqamiz.',
       btnSending: 'Yuborilmoqda...',
       btnSubmit: 'So\'rovni yuborish'
+    },
+    about: {
+      title: 'Mayfair Automotive Haus haqida',
+      subtitle: 'Dubaydagi Eng Katta Premium Avtosalon',
+      desc1: "Mayfair Automotive Haus'ga xush kelibsiz. Biz Dubaydagi hashamatli, sport va noyob avtomobillar bo'yicha eng yirik markazmiz. Biz dunyodagi eng noyob va qidirilgan avtomobillarni taqdim etishimiz bilan faxrlanamiz.",
+      desc2: "Bizning mukammallikka bo'lgan intilishimiz avtosalon bilan cheklanib qolmaydi. Biz butun dunyo bo'ylab mijozlarimizga maxsus avtomobil qidirish, moslashtirilgan moliyaviy yechimlar va yuqori darajadagi yopiq xizmatlarni taqdim etamiz.",
+      statsTitle: 'Bizning Global Qamrovimiz',
+      stat1: '15,000+',
+      stat1Desc: 'Sotilgan Premium Avtomobillar',
+      stat2: '50+',
+      stat2Desc: 'Davlatlarga Eksport',
+      stat3: '100%',
+      stat3Desc: 'Mijozlar Mamnuniyati',
+      videoTitle: 'Avtomobil Mukammalligini Kashf Eting',
+      videoDesc: "Muhandislik va dizayn cho'qqisini his eting. Bizning avtomobillar eng so'nggi texnologiyalar, tengsiz ishlash qobiliyati va mutlaq hashamat bilan jihozlangan. Barcha xususiyatlarni amalda ko'rish uchun ushbu videoni tomosha qiling."
     }
   },
   ru: {
@@ -351,6 +381,21 @@ export const translations = {
       subtitle: 'Оставьте свои данные, и мы свяжемся с вами.',
       btnSending: 'Отправка...',
       btnSubmit: 'Отправить запрос'
+    },
+    about: {
+      title: 'О Mayfair Automotive Haus',
+      subtitle: 'Крупнейший автосалон премиум-класса в Дубае',
+      desc1: 'Добро пожаловать в Mayfair Automotive Haus — главное место в Дубае, где представлены роскошные, спортивные и экзотические автомобили. Мы гордимся тем, что предлагаем непревзойденный выбор самых востребованных автомобилей в мире.',
+      desc2: 'Наше стремление к совершенству выходит за рамки автосалона. Мы предоставляем индивидуальный поиск, финансовые решения и конфиденциальное обслуживание мирового класса клиентам по всему миру.',
+      statsTitle: 'Наш глобальный охват',
+      stat1: '15,000+',
+      stat1Desc: 'Проданных премиальных авто',
+      stat2: '50+',
+      stat2Desc: 'Стран экспорта',
+      stat3: '100%',
+      stat3Desc: 'Удовлетворенность клиентов',
+      videoTitle: 'Откройте для себя автомобильное совершенство',
+      videoDesc: 'Испытайте вершину инженерии и дизайна. Наши автомобили оснащены самыми современными функциями, непревзойденной производительностью и невероятной роскошью. Посмотрите видео, чтобы увидеть эти невероятные функции в действии.'
     }
   }
 };

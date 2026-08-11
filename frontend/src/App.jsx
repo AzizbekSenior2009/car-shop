@@ -9,6 +9,7 @@ import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import CartPage from './pages/CartPage';
+import AboutPage from './pages/AboutPage';
 
 import ScrollToTop from './components/ScrollToTop';
 import { CartProvider } from './context/CartContext';
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/cart" element={<CartPage />} />
+                <Route path="/about" element={<AboutPage />} />
                 <Route path="/car/:id" element={<CarDetailsPage />} />
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>

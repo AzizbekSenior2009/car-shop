@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="footer-links">
             <h3>{t('footer.company')}</h3>
             <ul>
-              <li><Link to="/">{t('footer.about')}</Link></li>
+              <li><Link to="/about">{t('footer.about')}</Link></li>
               <li><Link to="/">{t('footer.careers')}</Link></li>
               <li><Link to="/">{t('footer.privacy')}</Link></li>
               <li><Link to="/">{t('footer.terms')}</Link></li>

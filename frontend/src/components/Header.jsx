@@ -39,7 +39,7 @@ const Header = () => {
             <ul>
               <li><Link to="/" className={isActive('/')} onClick={handleLinkClick}>{t('nav.home')}</Link></li>
               <li><Link to="/inventory" className={isActive('/inventory')} onClick={handleLinkClick}>{t('nav.inventory')}</Link></li>
-              <li><Link to="/services" className={isActive('/services')} onClick={handleLinkClick}>{t('nav.about')}</Link></li>
+              <li><Link to="/about" className={isActive('/about')} onClick={handleLinkClick}>{t('nav.about')}</Link></li>
               <li><Link to="/contact" className={isActive('/contact')} onClick={handleLinkClick}>{t('nav.contact')}</Link></li>
             </ul>
             <div className="header-actions-mobile">
