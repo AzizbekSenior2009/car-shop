@@ -28,14 +28,14 @@ const EnquireModal = ({ isOpen, onClose, carName }) => {
       setTimeout(() => {
         onClose();
         setTimeout(() => setStatus('idle'), 300);
-      }, 2000);
+      }, 500);
     } catch (err) {
       console.warn('Simulating success because backend is unreachable');
       setStatus('success');
       setTimeout(() => {
         onClose();
         setTimeout(() => setStatus('idle'), 300);
-      }, 2000);
+      }, 500);
     }
   };
 

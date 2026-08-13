@@ -16,7 +16,7 @@ const CarCard = ({ car }) => {
     e.stopPropagation();
     addToCart(car);
     setAdded(true);
-    setTimeout(() => setAdded(false), 2000);
+    setTimeout(() => setAdded(false), 500);
   };
 
   const handleCardClick = () => {
